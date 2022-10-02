@@ -1,3 +1,5 @@
+const word = 'hello';
+
 const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
 
 const WORDS = [
@@ -42,7 +44,7 @@ const generateLetterButtons = () => {
 // `buttonEl` is an `HTMLElement` object.
 //
 const disableLetterButton = (buttonEl) => {
- buttonEl.disabled = true
+ buttonEl.disabled = true;
  
 };
 
@@ -51,7 +53,13 @@ const disableLetterButton = (buttonEl) => {
 // For now, you should test it out to make sure it works
 
 const isLetterInWord = (letter) => {
-  // Replace this with your code
+  
+  if (word.includes(letter)) {         
+      return true;
+
+  }
+
+
 };
 
 // This is like if __name__ == '__main__' in Python
@@ -62,7 +70,7 @@ const isLetterInWord = (letter) => {
   // You can change this to choose a random word from WORDS once you
   // finish this lab but we hard code it so we know what the word is
   // and can tell if things look correct for this word
-  const word = 'hello';
+  // const word = 'hello';
 
   // call the function that makes an empty line for each letter in the word
 
